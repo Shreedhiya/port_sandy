@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <title>responsive grid</title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "navbar navbar"
+    "sidebar main"
+    "sidebar footer";
+}
+
+nav{
+    grid-area: navbar;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color:black;
+    font-weight: bold;
+    background-color:white;
+   
+}
+.nav-links a{
+    text-decoration: none;
+
+}
+.nav-links{
+    list-style: none;
+    background-color: rgb(107, 123, 129);
+    color:rgb(6, 105, 145);
+}
+
+aside{
+    grid-area: sidebar;
+    padding-left:5px;
+    font-size: 18px;
+    background:rgb(107, 123, 129);
+}
+main{
+    grid-area: main;
+    background-color: white;
+    margin-left: 5px;
+    width: max-content;
+
+}
+.middle3 img{
+    height: 150px;
+    width: 100px;
+    /* padding-left: 30px; */
+    border-radius: 20px;
+}
+.black{
+    color:black;
+    font-weight: bold;
+}
+.middle1{
+    color: black;
+    font-size: small;
+}
+.middle1 h1{
+    color: black;
+}
+.middle1 h4{
+    color: black;
+}
+ .middle2{
+    top:500px;
+} 
+
+.middle2 button{
+    top: 500px;
+    width: 120px;
+    height: 30px;
+    font-size: large;
+    background-color: brown;
+    border-radius: 20px;
+    border: 2px black solid;
+}
+
+    
+.logos{ 
+
+    color: #333;
+}
+.logos a{
+    text-decoration: none;
+    padding: 6px;
+    margin: 5px;
+    border-radius: 50%;
+    
+} 
+.logos a i{
+    font-size: 1.5em;
+    color: black;
+}
+
+footer{
+    grid-area: footer;
+    background: white; 
+    color:black;
+    padding: 3em;
+    font-size: 15px;
+    background-color: #555151;
+}
+
+    </style>
+
+    <nav class="logo" align="center">PORTFOLIO</nav>
+    <aside>
+        <ul class="nav-links"><br>
+            <li><a href="Education.html">Education</a></li>
+            <br><hr><br>
+            <li><a href="skills.html">skills</a></li>
+            <br><hr><br>
+            <li><a href="contact.html">contact</a></li>
+            <br><hr><br>
+            <li><a href="#">About</a></li>
+            <br><hr><br>
+        </ul>
+        
+    </aside>
+    <main>
+        <div class="middle3">
+            <img src="sandy.jpeg" alt="">
+
+        </div>
+        <div class="middle1">
+            <h1 id="h1">Hii I'm<br><span class="black">Sandhiya</span></h1>
+            <br>
+            <h2>A Bit About Me</h2>
+            <br>
+            <h4> I am a Front End Junior Developer. <br>
+                I focus on creating experiences<br> that are functionaly and<br> 
+                functionaly and visually compelling.<br>
+                Experienced in building and<br> optimizing websites <br>
+                and applications for accessbility.
+                </h4>
+        </div>
+        <div class="middle2"><br>
+            <a href="Sandhiya resume.pdf" download><button id="press"><b>Resume </b></button></a>
+        </div>
+        <div class="logos"><br>
+            <a href="https://www.linkedin.com/in/sandhiya-ramaswamy-4a2620296/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Shreedhiya"target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/sandy_dhiya_12/"target="_blank"><i class="fa-brands fa-instagram"></i> </a>
+            <a href="https://wa.me/qr/XAQ4QARKD2F3J1"target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+       
+    </main>
+    <footer>
+        <div class="end1">
+            <p>email: ramaswamysandhya52@gmail.com</p>
+             
+         </div>
+    </footer>
+    
+</body>
+</html>
